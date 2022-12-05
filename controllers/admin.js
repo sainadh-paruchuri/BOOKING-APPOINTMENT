@@ -1,4 +1,5 @@
 const User = require('../models/User');
+const path=require('path')
 
 exports.getAddUser=async(req,res)=>{
     res.sendFile(path.join(__dirname,'..','views','registration.html'))
